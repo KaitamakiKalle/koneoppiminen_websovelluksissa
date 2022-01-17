@@ -1,0 +1,51 @@
+Lasketaan x:n arvo kaavalla
+x = w1 * i1 + w2 * i2 + w3 * i3 + b
+eli x = -1 * 0 + 2 * -1 + 1 * -1 + 1
+    x = -2
+
+----
+
+a) ReLU 
+0 if x <= 0
+x if x > 0
+Kyseisellä aktivaatiofunktiolla neuronista palautuu siis 0 koska -2 < 0
+
+----
+
+b) TanH 
+
+TanH(x) = (e^x - e^-x) / (e^x + e^-x)
+        = (e^-2 - e^-(-2)) / (e^-2 + e^-(-2))
+        = 0.96402758
+        ≈ 0.96
+Kyseisellä aktivaatiofunktiolla neuronista palautuu 0.96
+
+----
+
+c) Sigmoid
+
+σ(x) = 1 / (1 + e^-x)
+
+     = 1 / (1 + e^-(-2))
+     = 0.119202922
+     ≈ 0.12
+Eli palautuu 0.12
+
+----
+
+d) Unit step
+
+0 if x < 0
+1 if x >= 0
+Palautuu siis 0 koska -2 < 0
+
+----
+
+e) softplus
+
+ln(1 + e^x)
+= ln(1 + e^-2)
+= 0.126928011
+≈ 0.13
+
+

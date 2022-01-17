@@ -1,0 +1,55 @@
+1.Koneoppimismalli
+Koneoppimismalli luodaan valmiiksi annetusta datasta ja tuloksista. Malli asettaa perustan ja reunaehdot säännöille
+jolla päättely tapahtuu. Valmiin, harjoitetun mallin avulla voidaan siis päättellä ratakaisuja ongelmiin datan perusteella jolla
+malli on harjoitettu.
+
+2. keras
+Keras on ternsorflow päälle rakennettu python framework keinotekoisille neuroverkoille. Käytetään neuroverkkojen kehittämiseen.
+
+3. Transfer learning
+Transfer learning eli siirto oppiminen on tapa jos valmista (harjoitettua) koneoppimismallia muokataan uudelleen omaa käytötarkoitusta 
+varten. Malli voidaan esimerkiksi harjoittaa uudestaan omalla datalla tai sen tulosta voidaan käyttää syötteenä uudelle mallille. 
+Esim. puhetta voidaan kerätä tensorflown valmiilla mallilla ja syöttää omalle mallille tunnistettavaksi.
+
+4. Loss funktio
+Loss arvioi neuroverkon tulosten tarkkuutta. Jokaisen harjoituskerran jälkeen tutkitaan ns. loss index ja mitä lähempänä 0
+sen arvo on sen tarkempi tulos on. Käytetään neuroverkon harjoittamisessa.
+
+5. Softmax
+Softmax on aktivaatiofunktio jota käytetään yleensä output layerissä. Se pelkistää tuloksen välille todennäköisyydeksi 0-1 .
+Käytetään kun lasketaan todennäköisyyksiä esim. logistinen regressio
+
+6. Stochastic Gradient Descent (SGD)
+SGD on optimointi menetelmä koneoppimisessa. Se eroaa tavallisesta gradient descentistä siten että datasetistä valitaan
+joka iteraatioon vain yksi näyte. Tavallinen GD käy joka iteraatio kierroksella jokaisen näytteen läpi joten jos
+dataa on valtava määrä prosessista tulee todella raskas ja SGD ratkaisee tämän ongelman.
+
+7. Neuroverkon parametrit ja hyperparametrit
+Neuroverkon parametreja ovat sen painokertoimet ja bias. Neuroverkon optimointialgoritmi säätää nämä harjoitusvaiheessa
+sopiviksi ja neuroverkon älykkyys piileekin juuri näissä arvoissa. Neuroverkko siis säätää parametrit automaattisesti.
+Ne verkon määritykset johon kehittäjä voi vaikuttaa ovat hyperparametrejä. Niitä ovat esimerkikis kerroksien ja neuronien
+lukumäärä, käytetäänkö biasia vai ei, learning rate ja aktivaatiofunktiot.
+
+8. Ylisovittaminen (overfitting)
+Kun neuroverkko harjoitetaan voi accuracy olla erittäin hyvä mutta kun toimintaa kokeillaan uudella datalla accuracy onkin huono.
+Tällöin on tapahtunut ylisovittaminen eli verkko on oppinut harjoitusdatan piirteet liian hyvin eli esimerkiksi
+niin kutsuttu datan noise on vaikuttanut oppimiseen.
+
+9.Convolutional Neural Network (CNN)
+Convolutionaalinen neuroverkko eroaa tavallisesta verkosta siten että jokaisen kerroksen jokainen neuroni ei välttämättä
+yhdisty toisiinsa. Convolutionaalisella verkolla käsitellään esimerkiksi ääntä koska tavalisella verkolla ylisovittaminen
+tapahtuisi todella helposti ja lisäksi koska datan määrä on niin suuri verkko olisi hidas.
+
+10. Recurrent Neural Network (RNN)
+RNN eli takaisinkytketyssä verkossa syötteiden informaatio kulkee aika-akselittain eteenpäin. RNN verkot voivat myös 
+käyttää sisäistä tilaa eli muistia datan käsittelyyn. RNN verkkoja käytetään ajallisesti jäsennellyn datan käsittelyyn
+kuten käsikirjoituksen tai puheen käsittelyyn.
+
+11. Generative Adversial Network (GAN)
+GAN verkossa kaksi neuroverkkoa "kilpailevat" keskenään "pelissä". Toinen neuroverkko yrittää luoda autenttisia datapisteitä, ja toinen 
+yrittää erottaa aidot ja neuroverkon luomat datapisteet toisistaan. Lopputuloksena luova neuroverkko oppii luomaan esimerkiksi erittäin 
+aidon oloisia valokuvia. GAN verkkoja käytetään puoliohjatussa oppimisessa, ohjatussa oppimisessa ja vahvistusoppimisessa.
+
+12. natural Language Processing (NLP)
+NLP liittyy ihmisten puhuman kielen ja tietokoneen väliseen vuorovaikutukseen. Sillä pyritään luomaan ohjelmia jotka pystyvät
+käsittelemään luonnollista kielidataa, eli esim. ymmärtämään sanojen välisiä suhteita.

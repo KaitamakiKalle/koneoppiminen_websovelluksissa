@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <button id="moi" onmousedown="collect(0)" onmouseup="collect(null)">
+      moi
+    </button>
+    <button id="hei" onmousedown="collect(1)" onmouseup="collect(null)">
+      hei
+    </button>
+    <button id="noise" onmousedown="collect(2)" onmouseup="collect(null)">
+      Noise
+    </button>
+    <br /><br />
+    <button id="train" onclick="train()">Train</button>
+    <script src="index2.js"></script>
+    <br /><br />
+    <button id="listen" onclick="listen()">Listen</button>
+    <!-- <input type="range" id="output" min="0" max="10" step="0.1" /> -->
+    <div id="console2"></div>
+  </body>
+</html>
