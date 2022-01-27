@@ -1,1 +1,0 @@
-Kuvat mallin harjoittamiseen on haettu julkisesta datasetistä osoitteesta: https://www.kaggle.com/sumansid/facemask-dataset
