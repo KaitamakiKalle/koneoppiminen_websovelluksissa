@@ -1,0 +1,1 @@
+Koneoppiminen web-sovelluksissa kurssin tehtävät
